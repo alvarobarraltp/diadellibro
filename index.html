@@ -1,9 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Día del Libro 2025</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 0; background: #fdf6e3; color: #333; }
+    h1, h2, h3 { color: #2e7d32; }
+    section { padding: 20px; border-bottom: 1px solid #ccc; display: none; }
+    section.active { display: block; }
+    .nav-buttons { text-align: center; margin: 20px; }
+    button {
+      padding: 16px 32px;
+      margin: 8px;
+      font-size: 18px;
+      font-weight: bold;
+      background: linear-gradient(135deg, #ff9800, #f44336);
+      color: white;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+    button:hover {
+      background: linear-gradient(135deg, #f44336, #ff9800);
+      transform: scale(1.05);
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    }
+    ul { padding-left: 20px; }
+    .standout { background: #e8f5e9; padding: 10px; border-left: 5px solid #2e7d32; }
+    table { width: 100%; border-collapse: collapse; margin-top: 15px; }
+    th, td { border: 1px solid #ccc; padding: 8px; text-align: center; }
+    th { background: #c8e6c9; }
+  </style>
+</head>
+<body>
+
+<h1 style="text-align:center; padding: 20px;">📚✨ Día del Libro 2025 ✨📚</h1>
+
+<div class="nav-buttons">
+  <button onclick="showSection(0)">Introducción</button>
+  <button onclick="showSection(1)">Objetivos</button>
+  <button onclick="showSection(2)">Tarea</button>
+  <button onclick="showSection(3)">Proceso</button>
+  <button onclick="showSection(4)">Evaluación</button>
+  <button onclick="showSection(5)">Premiación</button>
+</div>
+
+<!-- Aquí se espera que el contenido ya esté integrado desde el canvas, que el usuario aprobó -->
+
 <script>
+  // Activar la sección inicial automáticamente
   const sections = document.querySelectorAll('section');
   function showSection(index) {
     sections.forEach((s, i) => s.classList.toggle('active', i === index));
   }
-  function showSection(index) { ... }
+  showSection(0);
 </script>
+
 </body>
 </html>
